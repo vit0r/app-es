@@ -7,4 +7,4 @@ ENV MYSQL_USER="ES_DOC"
 ENV MYSQL_PASSWORD="esDocs123!"
 #ENV MYSQL_ROOT_PASSWORD_FILE=/run/secrets/mysql-root
 
-#create scheme sql to create tables
+COPY ./es_documents.sql /docker-entrypoint-initdb.d/
